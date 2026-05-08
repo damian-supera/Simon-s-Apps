@@ -1,6 +1,6 @@
-# DateUp Pages
+# Simon's Apps Pages
 
-Publiczny mini-serwis dla projektu DateUp, przygotowany do publikacji przez GitHub Pages.
+Publiczny mini-serwis dla wielu aplikacji Simona, przygotowany do publikacji przez GitHub Pages.
 
 Repo zawiera gotowy statyczny hub, do ktorego mozna podpinac wiele aplikacji, m.in. w:
 
@@ -14,6 +14,9 @@ Repo zawiera gotowy statyczny hub, do ktorego mozna podpinac wiele aplikacji, m.
 - `dateup/index.html` - landing legalowy dla aplikacji DateUp
 - `dateup/privacy.html` - polityka prywatnosci DateUp
 - `dateup/delete-account.html` - strona usuwania konta DateUp
+- `micro-workout-timer/index.html` - landing legalowy dla aplikacji Micro Workout Timer
+- `micro-workout-timer/privacy.html` - polityka prywatnosci Micro Workout Timer
+- `micro-workout-timer/delete-account.html` - strona o usuwaniu danych dla Micro Workout Timer
 - `privacy.html` - przekierowanie ze starego rootowego URL do `dateup/privacy.html`
 - `delete-account.html` - przekierowanie ze starego rootowego URL do `dateup/delete-account.html`
 - `styles.css` - wspolne style dla calego serwisu
@@ -31,6 +34,10 @@ Kazda aplikacja powinna dostac osobny katalog:
   styles.css
   site.js
   /dateup
+    index.html
+    privacy.html
+    delete-account.html
+  /micro-workout-timer
     index.html
     privacy.html
     delete-account.html
@@ -84,19 +91,29 @@ Aktualny uklad repo zaklada publikacje z katalogu glownego repozytorium, czyli z
 
 Po publikacji adres bedzie mial zwykle format:
 
-`https://NAZWA-UZYTKOWNIKA.github.io/DateUp-pages/`
+`https://NAZWA-UZYTKOWNIKA.github.io/NAZWA_REPOZYTORIUM/`
+
+W przypadku tego repo, jesli pozostanie obecna nazwa, adres bedzie mial format:
+
+`https://damian-supera.github.io/Simon-s-Apps/`
 
 Aktualne adresy DateUp:
 
-- `https://NAZWA-UZYTKOWNIKA.github.io/DateUp-pages/dateup/`
-- `https://NAZWA-UZYTKOWNIKA.github.io/DateUp-pages/dateup/privacy.html`
-- `https://NAZWA-UZYTKOWNIKA.github.io/DateUp-pages/dateup/delete-account.html`
+- `https://damian-supera.github.io/Simon-s-Apps/dateup/`
+- `https://damian-supera.github.io/Simon-s-Apps/dateup/privacy.html`
+- `https://damian-supera.github.io/Simon-s-Apps/dateup/delete-account.html`
+
+Aktualne adresy Micro Workout Timer:
+
+- `https://damian-supera.github.io/Simon-s-Apps/micro-workout-timer/`
+- `https://damian-supera.github.io/Simon-s-Apps/micro-workout-timer/privacy.html`
+- `https://damian-supera.github.io/Simon-s-Apps/micro-workout-timer/delete-account.html`
 
 ## Klikniecia w GitHub
 
 Po wypchnieciu repo na GitHub:
 
-1. Wejdz w repozytorium `DateUp-pages`.
+1. Wejdz w repozytorium z tym projektem, np. `Simon-s-Apps`.
 2. Kliknij `Settings`.
 3. W lewym menu kliknij `Pages`.
 4. W sekcji `Build and deployment` ustaw `Source` na `Deploy from a branch`.
@@ -114,6 +131,9 @@ Warto od razu sprawdzic:
 - czy dziala `dateup/index.html`
 - czy dziala `dateup/privacy.html`
 - czy dziala `dateup/delete-account.html`
+- czy dziala `micro-workout-timer/index.html`
+- czy dziala `micro-workout-timer/privacy.html`
+- czy dziala `micro-workout-timer/delete-account.html`
 - czy przelacznik jezyka PL / EN dziala poprawnie
 - czy nie zostaly zadne placeholdery typu `[UZUPELNIJ]` albo `[FILL IN]`
 
