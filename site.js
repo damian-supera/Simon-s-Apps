@@ -1,7 +1,7 @@
 (function () {
     const buttons = Array.from(document.querySelectorAll("[data-lang-button]"));
     const sections = Array.from(document.querySelectorAll("[data-lang-section]"));
-    const storageKey = "dateup-pages-lang";
+    const storageKey = "simons-apps-lang";
 
     function applyLanguage(lang) {
         sections.forEach((section) => {

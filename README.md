@@ -51,7 +51,7 @@ Kazda aplikacja powinna dostac osobny katalog:
 
 To jest zwykly statyczny serwis HTML/CSS/JS.
 
-Nie wymaga buildu, frameworka ani instalacji zaleznosci. Po wlaczeniu GitHub Pages repo moze byc publikowane bezposrednio z glownego branchu `main` i z folderu root.
+Nie wymaga buildu, frameworka ani instalacji zaleznosci. Po wlaczeniu GitHub Pages repo moze byc publikowane bezposrednio z glownego branchu `master` i z folderu root.
 
 ## Uruchomienie lokalne
 
@@ -118,7 +118,7 @@ Po wypchnieciu repo na GitHub:
 3. W lewym menu kliknij `Pages`.
 4. W sekcji `Build and deployment` ustaw `Source` na `Deploy from a branch`.
 5. W sekcji `Branch` wybierz:
-   - branch: `main`
+   - branch: `master`
    - folder: `/(root)`
 6. Kliknij `Save`.
 7. Poczekaj, az GitHub pokaze publiczny adres strony.

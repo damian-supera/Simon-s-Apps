@@ -3,21 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DateUp Pages Privacy Center</title>
-    <meta name="description" content="Public privacy center for multiple apps published on DateUp Pages.">
+    <title>Simon's Apps Privacy &amp; Support</title>
+    <meta name="description" content="Privacy policies, account resources, and support pages for Simon's apps.">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <header class="site-header">
     <div class="site-header-inner">
         <a class="brand" href="./index.html">
-            <span class="brand-mark">D</span>
-            <span>DateUp Pages</span>
+            <span class="brand-mark">S</span>
+            <span>Simon's Apps</span>
         </a>
         <nav class="nav-links">
             <a href="./dateup/index.html">DateUp</a>
-            <a href="./dateup/privacy.html">Privacy Policy</a>
-            <a href="./dateup/delete-account.html">Delete Account</a>
             <a href="./micro-workout-timer/index.html">Micro Workout Timer</a>
         </nav>
     </div>
@@ -25,18 +23,44 @@
 
 <main class="shell">
     <section class="hero">
-        <div class="eyebrow">Privacy Center</div>
-        <div data-lang-section="pl">
-            <h1>Jedno GitHub Pages dla wielu aplikacji.</h1>
-            <p>Ta strona jest teraz wspolnym hubem dla publicznych zasobow prawnych kilku aplikacji. Kazda aplikacja dostaje osobny katalog i wlasne, precyzyjne linki do polityki prywatnosci oraz usuwania konta.</p>
-        </div>
-        <div data-lang-section="en">
-            <h1>One GitHub Pages site for multiple apps.</h1>
-            <p>This page is now a shared hub for public legal resources across multiple apps. Each app gets its own folder and precise URLs for its privacy policy and account deletion resources.</p>
-        </div>
-        <div class="hero-actions">
-            <a class="button button-primary" href="./dateup/index.html">Open DateUp hub</a>
-            <a class="button" href="./micro-workout-timer/index.html">Open Micro Workout Timer hub</a>
+        <div class="hero-layout">
+            <div class="hero-copy">
+                <div class="eyebrow">Privacy &amp; Support</div>
+                <div data-lang-section="pl">
+                    <h1>Wszystkie najwazniejsze linki dla aplikacji w jednym miejscu.</h1>
+                    <p>Tutaj znajdziesz polityki prywatnosci, informacje o usuwaniu konta lub danych oraz podstawowe strony supportowe dla kazdej aplikacji.</p>
+                </div>
+                <div data-lang-section="en">
+                    <h1>Key privacy and support links for every app in one place.</h1>
+                    <p>Find privacy policies, account or data deletion information, and the main public support pages for each app.</p>
+                </div>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="./dateup/index.html">Open DateUp</a>
+                    <a class="button" href="./micro-workout-timer/index.html">Open Micro Workout Timer</a>
+                </div>
+            </div>
+
+            <aside class="hero-side">
+                <div class="meta">Available Now</div>
+                <div data-lang-section="pl">
+                    <h3>Dwie aplikacje, szybki dostep do wlasciwych zasobow.</h3>
+                    <p>Wybierz swoja aplikacje i przejdz od razu do jej sekcji z dokumentami i linkami.</p>
+                </div>
+                <div data-lang-section="en">
+                    <h3>Two apps, direct access to the right resources.</h3>
+                    <p>Choose your app and jump straight to the documents and links that belong to it.</p>
+                </div>
+                <div class="link-stack">
+                    <a class="link-tile" href="./dateup/index.html">
+                        <strong>DateUp</strong>
+                        <span>Privacy policy and account deletion</span>
+                    </a>
+                    <a class="link-tile" href="./micro-workout-timer/index.html">
+                        <strong>Micro Workout Timer</strong>
+                        <span>Privacy policy and data deletion info</span>
+                    </a>
+                </div>
+            </aside>
         </div>
     </section>
 
@@ -47,78 +71,87 @@
         </div>
     </section>
 
-    <section class="section card-grid">
+    <section class="section">
+        <div class="section-heading">
+            <div data-lang-section="pl">
+                <h2>Wybierz aplikacje</h2>
+            </div>
+            <div data-lang-section="en">
+                <h2>Choose an app</h2>
+            </div>
+        </div>
+
+        <div class="card-grid">
         <article class="doc-card">
             <div class="meta">App 1</div>
             <h2>DateUp</h2>
             <div data-lang-section="pl">
-                <p>Gotowy zestaw podstron dla aplikacji DateUp: landing legalowy, polityka prywatnosci i strona usuwania konta.</p>
+                <p>Sekcja dla aplikacji randkowej DateUp z publiczna polityka prywatnosci i instrukcja usuwania konta.</p>
             </div>
             <div data-lang-section="en">
-                <p>A ready set of pages for the DateUp app: an app legal landing page, privacy policy, and account deletion page.</p>
+                <p>The public DateUp section with its privacy policy and account deletion information.</p>
             </div>
-            <a class="button" href="./dateup/index.html">Open app section</a>
-        </article>
-
-        <article class="doc-card">
-            <div class="meta">Next apps</div>
-            <h2>More apps later</h2>
-            <div data-lang-section="pl">
-                <p>Kolejne aplikacje mozesz dodawac tym samym schematem, np. <code>/app-2/privacy.html</code> i <code>/app-2/delete-account.html</code>.</p>
+            <div class="card-actions">
+                <a class="button button-primary" href="./dateup/index.html">Open app section</a>
+                <a class="button" href="./dateup/privacy.html">Privacy Policy</a>
             </div>
-            <div data-lang-section="en">
-                <p>You can add the next apps using the same pattern, for example <code>/app-2/privacy.html</code> and <code>/app-2/delete-account.html</code>.</p>
-            </div>
-            <a class="button" href="./dateup/index.html">See current example</a>
         </article>
 
         <article class="doc-card">
             <div class="meta">App 2</div>
             <h2>Micro Workout Timer</h2>
             <div data-lang-section="pl">
-                <p>Osobna sekcja dla aplikacji Micro Workout Timer z landingiem, polityka prywatnosci i strona o usuwaniu danych dla aplikacji bez konta.</p>
+                <p>Sekcja dla Micro Workout Timer z polityka prywatnosci i prostymi informacjami o usuwaniu danych.</p>
             </div>
             <div data-lang-section="en">
-                <p>A dedicated section for Micro Workout Timer with a landing page, privacy policy, and a data deletion page for an app without user accounts.</p>
+                <p>The Micro Workout Timer section with its privacy policy and a lightweight data deletion page.</p>
             </div>
-            <a class="button" href="./micro-workout-timer/index.html">Open app section</a>
+            <div class="card-actions">
+                <a class="button button-primary" href="./micro-workout-timer/index.html">Open app section</a>
+                <a class="button" href="./micro-workout-timer/privacy.html">Privacy Policy</a>
+            </div>
         </article>
+        </div>
     </section>
 
     <section class="section panel">
-        <div data-lang-section="pl">
-            <h2>Jak z tego korzystac</h2>
-            <ul class="checklist">
-                <li>Dla kazdej aplikacji utworz osobny katalog, np. <code>/dateup</code> albo <code>/app-2</code>.</li>
-                <li>W sklepie podawaj URL do konkretnej aplikacji, a nie tylko do strony glownej.</li>
-                <li>Zostaw wspolne style i skrypt w katalogu glownym, zeby latwiej utrzymywac calosc.</li>
-            </ul>
-        </div>
-        <div data-lang-section="en">
-            <h2>How to use this structure</h2>
-            <ul class="checklist">
-                <li>Create a separate folder for each app, such as <code>/dateup</code> or <code>/app-2</code>.</li>
-                <li>In the stores, use the URL for the specific app rather than only the home page.</li>
-                <li>Keep shared styles and the shared script in the root folder to make maintenance easier.</li>
-            </ul>
-        </div>
-
-        <div class="callout callout-success">
+        <div class="panel-grid">
             <div data-lang-section="pl">
-                <p><strong>GitHub Pages setup:</strong> GitHub -> repo -> <code>Settings</code> -> <code>Pages</code> -> Source: <code>Deploy from a branch</code> -> Branch: <code>main</code> -> Folder: <code>/(root)</code>.</p>
+                <h2>Co znajdziesz na tych stronach</h2>
+                <ul class="checklist">
+                    <li>osobna sekcja dla kazdej aplikacji,</li>
+                    <li>bezposrednie linki do polityki prywatnosci,</li>
+                    <li>strony z usuwaniem konta lub danych, gdy dotyczy,</li>
+                    <li>prosty punkt wejscia do publicznych materialow supportowych.</li>
+                </ul>
             </div>
             <div data-lang-section="en">
-                <p><strong>GitHub Pages setup:</strong> GitHub -> repo -> <code>Settings</code> -> <code>Pages</code> -> Source: <code>Deploy from a branch</code> -> Branch: <code>main</code> -> Folder: <code>/(root)</code>.</p>
+                <h2>What these pages are for</h2>
+                <ul class="checklist">
+                    <li>a dedicated section for each app,</li>
+                    <li>direct links to privacy policies,</li>
+                    <li>account or data deletion pages where relevant,</li>
+                    <li>a simple public entry point for support resources.</li>
+                </ul>
+            </div>
+
+            <div class="callout callout-success">
+                <div data-lang-section="pl">
+                    <p><strong>Wskazowka:</strong> jesli trafiles tutaj z App Store lub Google Play, wybierz swoja aplikacje i przejdz do odpowiedniej podstrony.</p>
+                </div>
+                <div data-lang-section="en">
+                    <p><strong>Tip:</strong> if you landed here from the App Store or Google Play, choose your app and open its dedicated section.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div data-lang-section="pl">
-            <p>To jest wspolny Privacy Center. Kazda aplikacja powinna miec wlasna podstrone z polityka prywatnosci i, jesli ma konto, z usuwaniem konta.</p>
+            <p>Oficjalne strony prywatnosci i wsparcia dla aplikacji Simona.</p>
         </div>
         <div data-lang-section="en">
-            <p>This is a shared Privacy Center. Each app should have its own privacy policy page and, if it includes accounts, its own account deletion page.</p>
+            <p>Official privacy and support pages for Simon's apps.</p>
         </div>
     </footer>
 </main>
