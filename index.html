@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DateUp Pages Privacy Center</title>
+    <meta name="description" content="Public privacy center for multiple apps published on DateUp Pages.">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="brand" href="./index.html">
+            <span class="brand-mark">D</span>
+            <span>DateUp Pages</span>
+        </a>
+        <nav class="nav-links">
+            <a href="./dateup/index.html">DateUp</a>
+            <a href="./dateup/privacy.html">Privacy Policy</a>
+            <a href="./dateup/delete-account.html">Delete Account</a>
+        </nav>
+    </div>
+</header>
+
+<main class="shell">
+    <section class="hero">
+        <div class="eyebrow">Privacy Center</div>
+        <div data-lang-section="pl">
+            <h1>Jedno GitHub Pages dla wielu aplikacji.</h1>
+            <p>Ta strona jest teraz wspolnym hubem dla publicznych zasobow prawnych kilku aplikacji. Kazda aplikacja dostaje osobny katalog i wlasne, precyzyjne linki do polityki prywatnosci oraz usuwania konta.</p>
+        </div>
+        <div data-lang-section="en">
+            <h1>One GitHub Pages site for multiple apps.</h1>
+            <p>This page is now a shared hub for public legal resources across multiple apps. Each app gets its own folder and precise URLs for its privacy policy and account deletion resources.</p>
+        </div>
+        <div class="hero-actions">
+            <a class="button button-primary" href="./dateup/index.html">Open DateUp hub</a>
+            <a class="button" href="./dateup/privacy.html">Open DateUp Privacy Policy</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang-button="pl">PL</button>
+            <button type="button" data-lang-button="en">EN</button>
+        </div>
+    </section>
+
+    <section class="section card-grid">
+        <article class="doc-card">
+            <div class="meta">App 1</div>
+            <h2>DateUp</h2>
+            <div data-lang-section="pl">
+                <p>Gotowy zestaw podstron dla aplikacji DateUp: landing legalowy, polityka prywatnosci i strona usuwania konta.</p>
+            </div>
+            <div data-lang-section="en">
+                <p>A ready set of pages for the DateUp app: an app legal landing page, privacy policy, and account deletion page.</p>
+            </div>
+            <a class="button" href="./dateup/index.html">Open app section</a>
+        </article>
+
+        <article class="doc-card">
+            <div class="meta">Next apps</div>
+            <h2>More apps later</h2>
+            <div data-lang-section="pl">
+                <p>Kolejne aplikacje mozesz dodawac tym samym schematem, np. <code>/app-2/privacy.html</code> i <code>/app-2/delete-account.html</code>.</p>
+            </div>
+            <div data-lang-section="en">
+                <p>You can add the next apps using the same pattern, for example <code>/app-2/privacy.html</code> and <code>/app-2/delete-account.html</code>.</p>
+            </div>
+            <a class="button" href="./dateup/index.html">See current example</a>
+        </article>
+    </section>
+
+    <section class="section panel">
+        <div data-lang-section="pl">
+            <h2>Jak z tego korzystac</h2>
+            <ul class="checklist">
+                <li>Dla kazdej aplikacji utworz osobny katalog, np. <code>/dateup</code> albo <code>/app-2</code>.</li>
+                <li>W sklepie podawaj URL do konkretnej aplikacji, a nie tylko do strony glownej.</li>
+                <li>Zostaw wspolne style i skrypt w katalogu glownym, zeby latwiej utrzymywac calosc.</li>
+            </ul>
+        </div>
+        <div data-lang-section="en">
+            <h2>How to use this structure</h2>
+            <ul class="checklist">
+                <li>Create a separate folder for each app, such as <code>/dateup</code> or <code>/app-2</code>.</li>
+                <li>In the stores, use the URL for the specific app rather than only the home page.</li>
+                <li>Keep shared styles and the shared script in the root folder to make maintenance easier.</li>
+            </ul>
+        </div>
+
+        <div class="callout callout-success">
+            <div data-lang-section="pl">
+                <p><strong>GitHub Pages setup:</strong> GitHub -> repo -> <code>Settings</code> -> <code>Pages</code> -> Source: <code>Deploy from a branch</code> -> Branch: <code>main</code> -> Folder: <code>/(root)</code>.</p>
+            </div>
+            <div data-lang-section="en">
+                <p><strong>GitHub Pages setup:</strong> GitHub -> repo -> <code>Settings</code> -> <code>Pages</code> -> Source: <code>Deploy from a branch</code> -> Branch: <code>main</code> -> Folder: <code>/(root)</code>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div data-lang-section="pl">
+            <p>To jest wspolny Privacy Center. Kazda aplikacja powinna miec wlasna podstrone z polityka prywatnosci i, jesli ma konto, z usuwaniem konta.</p>
+        </div>
+        <div data-lang-section="en">
+            <p>This is a shared Privacy Center. Each app should have its own privacy policy page and, if it includes accounts, its own account deletion page.</p>
+        </div>
+    </footer>
+</main>
+
+<script src="./site.js"></script>
+</body>
+</html>
