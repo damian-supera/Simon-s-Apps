@@ -1,0 +1,42 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="850" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10251C"/>
+      <stop offset="1" stop-color="#07120D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="300" y1="260" x2="760" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7CFF8C"/>
+      <stop offset="1" stop-color="#00D68F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- App background -->
+  <rect width="1024" height="1024" rx="220" fill="url(#bg)"/>
+
+  <!-- Subtle shelf/card -->
+  <rect x="250" y="246" width="524" height="584" rx="96" fill="#0F1D16" stroke="#1F3A2B" stroke-width="28"/>
+
+  <!-- Jar lid -->
+  <rect x="348" y="198" width="328" height="96" rx="40" fill="url(#accent)"/>
+  <rect x="386" y="228" width="252" height="18" rx="9" fill="#EFFFF4" opacity="0.55"/>
+
+  <!-- Jar body -->
+  <path d="M336 322C336 291.072 361.072 266 392 266H632C662.928 266 688 291.072 688 322V706C688 764.542 640.542 812 582 812H442C383.458 812 336 764.542 336 706V322Z" fill="#F6FFF8"/>
+
+  <!-- Label -->
+  <rect x="390" y="462" width="244" height="178" rx="38" fill="#E7F6EA"/>
+  <rect x="430" y="512" width="164" height="22" rx="11" fill="#0F1D16" opacity="0.32"/>
+  <rect x="458" y="558" width="108" height="22" rx="11" fill="#0F1D16" opacity="0.22"/>
+
+  <!-- Small leaf/food mark -->
+  <path d="M514 378C573 331 636 347 649 352C647 409 606 456 548 456C522 456 499 444 486 423C494 406 503 391 514 378Z" fill="url(#accent)"/>
+  <path d="M494 430C518 394 559 373 624 360" stroke="#0F1D16" stroke-width="22" stroke-linecap="round" opacity="0.22"/>
+
+  <!-- Expiry clock badge -->
+  <circle cx="690" cy="706" r="116" fill="#101A14" stroke="url(#accent)" stroke-width="30"/>
+  <path d="M690 646V710L736 736" stroke="#F6FFF8" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="690" cy="706" r="12" fill="#F6FFF8"/>
+
+  <!-- Bottom shadow -->
+  <ellipse cx="512" cy="846" rx="210" ry="36" fill="#000000" opacity="0.22"/>
+</svg>

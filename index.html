@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Simon's Apps Privacy &amp; Support</title>
     <meta name="description" content="Privacy policies, account resources, and support pages for Simon's apps.">
+    <link rel="icon" type="image/png" href="./assets/branding/simons-apps-logo.png">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 <header class="site-header">
     <div class="site-header-inner">
         <a class="brand" href="./index.html">
-            <span class="brand-mark">S</span>
+            <span class="brand-mark brand-logo-company">
+                <img src="./assets/branding/simons-apps-logo.png" alt="Simon's Apps logo">
+            </span>
             <span>Simon's Apps</span>
         </a>
         <nav class="nav-links">
-            <a href="./dateup/index.html">DateUp</a>
-            <a href="./micro-workout-timer/index.html">Micro Workout Timer</a>
+            <a href="./dateup/index.html" data-app-id="dateup">DateUp</a>
+            <a href="./micro-workout-timer/index.html" data-app-id="micro-workout-timer">Micro Workout Timer</a>
+            <a href="./pantry-expiry-tracker/index.html" data-app-id="pantry-expiry-tracker">Pantry Expiry Tracker</a>
         </nav>
     </div>
 </header>
@@ -35,29 +39,42 @@
                     <p>Find privacy policies, account or data deletion information, and the main public support pages for each app.</p>
                 </div>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="./dateup/index.html">Open DateUp</a>
-                    <a class="button" href="./micro-workout-timer/index.html">Open Micro Workout Timer</a>
+                    <a class="button button-primary" href="./dateup/index.html" data-app-id="dateup">Open DateUp</a>
+                    <a class="button" href="./micro-workout-timer/index.html" data-app-id="micro-workout-timer">Open Micro Workout Timer</a>
+                    <a class="button" href="./pantry-expiry-tracker/index.html" data-app-id="pantry-expiry-tracker">Open Pantry Expiry Tracker</a>
                 </div>
             </div>
 
             <aside class="hero-side">
                 <div class="meta">Available Now</div>
                 <div data-lang-section="pl">
-                    <h3>Dwie aplikacje, szybki dostep do wlasciwych zasobow.</h3>
-                    <p>Wybierz swoja aplikacje i przejdz od razu do jej sekcji z dokumentami i linkami.</p>
+                    <h3>Aktywne aplikacje sa gotowe do otwarcia.</h3>
+                    <p>Wybierz Micro Workout Timer albo Pantry Expiry Tracker i przejdz od razu do ich sekcji z dokumentami i linkami.</p>
                 </div>
                 <div data-lang-section="en">
-                    <h3>Two apps, direct access to the right resources.</h3>
-                    <p>Choose your app and jump straight to the documents and links that belong to it.</p>
+                    <h3>The active apps are ready to open.</h3>
+                    <p>Choose Micro Workout Timer or Pantry Expiry Tracker and jump straight to their documents and links.</p>
                 </div>
                 <div class="link-stack">
-                    <a class="link-tile" href="./dateup/index.html">
-                        <strong>DateUp</strong>
-                        <span>Privacy policy and account deletion</span>
+                    <a class="link-tile" href="./dateup/index.html" data-app-id="dateup">
+                        <div class="link-tile-copy">
+                            <strong>DateUp</strong>
+                            <span>Privacy policy and account deletion</span>
+                        </div>
                     </a>
-                    <a class="link-tile" href="./micro-workout-timer/index.html">
-                        <strong>Micro Workout Timer</strong>
-                        <span>Privacy policy and data deletion info</span>
+                    <a class="link-tile" href="./micro-workout-timer/index.html" data-app-id="micro-workout-timer">
+                        <img src="./assets/apps/micro-workout-timer.png" alt="Micro Workout Timer icon">
+                        <div class="link-tile-copy">
+                            <strong>Micro Workout Timer</strong>
+                            <span>Privacy policy and data deletion info</span>
+                        </div>
+                    </a>
+                    <a class="link-tile" href="./pantry-expiry-tracker/index.html" data-app-id="pantry-expiry-tracker">
+                        <img src="./assets/apps/pantry-expiry-tracker.png" alt="Pantry Expiry Tracker icon">
+                        <div class="link-tile-copy">
+                            <strong>Pantry Expiry Tracker</strong>
+                            <span>Privacy policy and data deletion info</span>
+                        </div>
                     </a>
                 </div>
             </aside>
@@ -82,8 +99,10 @@
         </div>
 
         <div class="card-grid">
-        <article class="doc-card">
-            <div class="meta">App 1</div>
+        <article class="doc-card" data-app-id="dateup">
+            <div class="app-card-top">
+                <div class="meta">App 1</div>
+            </div>
             <h2>DateUp</h2>
             <div data-lang-section="pl">
                 <p>Sekcja dla aplikacji randkowej DateUp z publiczna polityka prywatnosci i instrukcja usuwania konta.</p>
@@ -97,8 +116,11 @@
             </div>
         </article>
 
-        <article class="doc-card">
-            <div class="meta">App 2</div>
+        <article class="doc-card" data-app-id="micro-workout-timer">
+            <div class="app-card-top">
+                <img class="app-icon" src="./assets/apps/micro-workout-timer.png" alt="Micro Workout Timer icon">
+                <div class="meta">App 2</div>
+            </div>
             <h2>Micro Workout Timer</h2>
             <div data-lang-section="pl">
                 <p>Sekcja dla Micro Workout Timer z polityka prywatnosci i prostymi informacjami o usuwaniu danych.</p>
@@ -109,6 +131,24 @@
             <div class="card-actions">
                 <a class="button button-primary" href="./micro-workout-timer/index.html">Open app section</a>
                 <a class="button" href="./micro-workout-timer/privacy.html">Privacy Policy</a>
+            </div>
+        </article>
+
+        <article class="doc-card" data-app-id="pantry-expiry-tracker">
+            <div class="app-card-top">
+                <img class="app-icon" src="./assets/apps/pantry-expiry-tracker.png" alt="Pantry Expiry Tracker icon">
+                <div class="meta">App 3</div>
+            </div>
+            <h2>Pantry Expiry Tracker</h2>
+            <div data-lang-section="pl">
+                <p>Sekcja dla Pantry Expiry Tracker z polityka prywatnosci i prostymi informacjami o usuwaniu danych.</p>
+            </div>
+            <div data-lang-section="en">
+                <p>The Pantry Expiry Tracker section with its privacy policy and a lightweight data deletion page.</p>
+            </div>
+            <div class="card-actions">
+                <a class="button button-primary" href="./pantry-expiry-tracker/index.html">Open app section</a>
+                <a class="button" href="./pantry-expiry-tracker/privacy.html">Privacy Policy</a>
             </div>
         </article>
         </div>
@@ -156,6 +196,7 @@
     </footer>
 </main>
 
+<script src="./apps-config.js"></script>
 <script src="./site.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="220" fill="#0D1117"/>
+
+  <!-- Outer faint ring -->
+  <circle cx="512" cy="512" r="360"
+      stroke="#2A2F36"
+      stroke-width="40"
+      fill="none"/>
+
+  <!-- Progress ring -->
+  <circle cx="512" cy="512" r="360"
+      stroke="url(#grad)"
+      stroke-width="40"
+      stroke-linecap="round"
+      fill="none"
+      stroke-dasharray="1800"
+      stroke-dashoffset="400"
+      transform="rotate(-90 512 512)"/>
+
+  <!-- Center icon (bolt) -->
+  <path d="M540 300 L430 560 H520 L470 740 L620 480 H530 Z"
+      fill="#FFFFFF"/>
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5A0"/>
+      <stop offset="100%" stop-color="#00D9F5"/>
+    </linearGradient>
+  </defs>
+</svg>

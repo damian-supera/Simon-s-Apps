@@ -2,6 +2,29 @@
     const buttons = Array.from(document.querySelectorAll("[data-lang-button]"));
     const sections = Array.from(document.querySelectorAll("[data-lang-section]"));
     const storageKey = "simons-apps-lang";
+    const config = window.SIMONS_APPS_CONFIG || { apps: {} };
+
+    function isAppVisible(appId) {
+        if (!appId) {
+            return true;
+        }
+        const appConfig = config.apps[appId];
+        return !appConfig || appConfig.visible !== false;
+    }
+
+    function applyAppVisibility() {
+        const appElements = Array.from(document.querySelectorAll("[data-app-id]"));
+        appElements.forEach((element) => {
+            const visible = isAppVisible(element.dataset.appId);
+            element.hidden = !visible;
+            element.setAttribute("aria-hidden", visible ? "false" : "true");
+        });
+
+        const pageAppId = document.body.dataset.appPage;
+        if (pageAppId && !isAppVisible(pageAppId)) {
+            window.location.replace("../index.html");
+        }
+    }
 
     function applyLanguage(lang) {
         sections.forEach((section) => {
@@ -23,5 +46,6 @@
         button.addEventListener("click", () => applyLanguage(button.dataset.langButton));
     });
 
+    applyAppVisibility();
     applyLanguage(initial);
 })();
