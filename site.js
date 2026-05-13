@@ -3,6 +3,7 @@
     const sections = Array.from(document.querySelectorAll("[data-lang-section]"));
     const storageKey = "simons-apps-lang";
     const config = window.SIMONS_APPS_CONFIG || { apps: {} };
+    let preferred = null;
 
     function isAppVisible(appId) {
         if (!appId) {
@@ -35,10 +36,18 @@
             button.setAttribute("aria-pressed", button.dataset.langButton === lang ? "true" : "false");
         });
         document.documentElement.lang = lang === "en" ? "en" : "pl";
-        localStorage.setItem(storageKey, lang);
+        try {
+            localStorage.setItem(storageKey, lang);
+        } catch (error) {
+            // Ignore storage failures and keep the page functional.
+        }
     }
 
-    const preferred = localStorage.getItem(storageKey);
+    try {
+        preferred = localStorage.getItem(storageKey);
+    } catch (error) {
+        preferred = null;
+    }
     const browserLang = (navigator.language || "").toLowerCase().startsWith("pl") ? "pl" : "en";
     const initial = preferred || browserLang || "pl";
 

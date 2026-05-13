@@ -47,7 +47,7 @@
 
     <section class="section panel" data-lang-section="pl">
         <div class="callout callout-warning">
-            <p><strong>Przed publikacja uzupelnij:</strong> dane administratora, e-mail do spraw prywatnosci oraz informacje o zewnetrznych uslugach i analityce.</p>
+            <p><strong>Przed publikacja uzupelnij:</strong> dane administratora i adres e-mail do spraw prywatnosci.</p>
         </div>
 
         <section class="doc-section">
@@ -62,61 +62,71 @@
 
         <section class="doc-section">
             <h2>2. Zakres polityki</h2>
-            <p>Polityka opisuje zasady przetwarzania danych w aplikacji mobilnej Pantry Expiry Tracker oraz w ewentualnych powiazanych uslugach technicznych.</p>
+            <p>Polityka opisuje zasady przetwarzania danych w aplikacji mobilnej Pantry Expiry Tracker oraz w uslugach zewnetrznych zwiazanych z analityka, diagnostyka i reklamami.</p>
         </section>
 
         <section class="doc-section">
-            <h2>3. Jakie dane moga byc przetwarzane</h2>
-            <ul class="checklist">
-                <li>Dane techniczne urzadzenia, np. wersja systemu, identyfikatory aplikacji lub podstawowe logi diagnostyczne.</li>
-                <li>Dane o korzystaniu z aplikacji, np. lista produktow, daty waznosci, przypomnienia i lokalne ustawienia zapisane na urzadzeniu.</li>
-                <li>Dane diagnostyczne i crash reporty, jezeli korzystasz z zewnetrznych narzedzi analitycznych lub do raportowania bledow.</li>
-                <li>Dane zwiazane z platnosciami lub subskrypcjami, jezeli w przyszlosci zostana dodane funkcje premium przez Google Play lub Apple.</li>
-            </ul>
-            <p><code>[UZUPELNIJ: potwierdz, czy aplikacja tworzy konto, wysyla dane na backend albo korzysta z analityki]</code></p>
+            <h2>3. Brak konta uzytkownika</h2>
+            <p>Pantry Expiry Tracker nie wymaga tworzenia konta uzytkownika ani logowania. Aplikacja moze byc uzywana bez rejestracji.</p>
         </section>
 
         <section class="doc-section">
-            <h2>4. Cele i podstawy prawne</h2>
+            <h2>4. Jakie dane moga byc przetwarzane</h2>
             <ul class="checklist">
-                <li>Dzialanie aplikacji i zapisywanie ustawien: art. 6 ust. 1 lit. b lub lit. f RODO, w zaleznosci od modelu korzystania.</li>
-                <li>Bezpieczenstwo, diagnostyka i naprawa bledow: art. 6 ust. 1 lit. f RODO.</li>
-                <li>Rozliczenia i obowiazki prawne, jezeli pojawia sie platnosci: art. 6 ust. 1 lit. c i lit. b RODO.</li>
-                <li>Analityka lub marketing, jezeli zostana wdrozone: art. 6 ust. 1 lit. a RODO tam, gdzie wymagana jest zgoda.</li>
+                <li>Dane zapisane lokalnie na urzadzeniu, np. lista produktow, daty waznosci, przypomnienia i ustawienia aplikacji.</li>
+                <li>Dane techniczne i diagnostyczne, np. wersja systemu, model urzadzenia, identyfikatory instancji aplikacji, logi bledow i informacje potrzebne do utrzymania stabilnosci aplikacji.</li>
+                <li>Dane analityczne przetwarzane przez Firebase lub Google Analytics for Firebase, np. informacje o korzystaniu z aplikacji, zdarzenia w aplikacji oraz podstawowe dane o urzadzeniu i instalacji.</li>
+                <li>Dane zwiazane z reklamami, jezeli aplikacja wyswietla reklamy, np. identyfikatory reklamowe, podstawowe informacje o urzadzeniu oraz dane potrzebne do wyswietlania i pomiaru reklam przez Google lub partnerow reklamowych.</li>
             </ul>
         </section>
 
         <section class="doc-section">
-            <h2>5. Odbiorcy danych</h2>
+            <h2>5. Cele i podstawy prawne</h2>
+            <ul class="checklist">
+                <li>Dzialanie aplikacji oraz zapisywanie lokalnych danych i przypomnien: art. 6 ust. 1 lit. b lub lit. f RODO, zaleznie od przyjetego modelu korzystania.</li>
+                <li>Zapewnienie bezpieczenstwa, diagnostyki, statystyk technicznych i poprawy jakosci aplikacji: art. 6 ust. 1 lit. f RODO.</li>
+                <li>Wyswietlanie i pomiar reklam oraz finansowanie bezplatnej wersji aplikacji: art. 6 ust. 1 lit. f RODO albo art. 6 ust. 1 lit. a RODO tam, gdzie wymagana jest zgoda.</li>
+                <li>Wykonanie obowiazkow prawnych i obrona przed roszczeniami: art. 6 ust. 1 lit. c i lit. f RODO.</li>
+            </ul>
+        </section>
+
+        <section class="doc-section">
+            <h2>6. Odbiorcy danych</h2>
             <p>Dane moga byc ujawniane dostawcom uslug technicznych tylko w zakresie niezbednym do dzialania aplikacji, np.:</p>
             <ul class="inline-list">
-                <li>dostawcom analityki i crash reportow,</li>
-                <li>dostawcom infrastruktury chmurowej lub backendowej, jezeli sa wykorzystywani,</li>
-                <li>Google lub Apple w zakresie obslugi sklepu, platnosci i dystrybucji aplikacji.</li>
+                <li>Google i Firebase w zakresie analityki, diagnostyki, identyfikatorow instancji aplikacji i powiazanych uslug technicznych,</li>
+                <li>Google AdMob lub innym partnerom reklamowym, jezeli sa wykorzystywani do wyswietlania i pomiaru reklam,</li>
+                <li>Apple lub Google w zakresie dystrybucji aplikacji, platnosci i obslugi sklepu, jezeli ma to zastosowanie.</li>
             </ul>
         </section>
 
         <section class="doc-section">
-            <h2>6. Okres przechowywania</h2>
-            <p>Zakres i czas przechowywania danych zalezy od tego, czy dane pozostaja lokalnie na urzadzeniu, czy trafiaja do zewnetrznych uslug technicznych.</p>
-            <p><code>[UZUPELNIJ: opisz lokalne przechowywanie, retencje logow i okresy przechowywania u dostawcow]</code></p>
+            <h2>7. Okres przechowywania</h2>
+            <p>Dane zapisane lokalnie na urzadzeniu sa przechowywane do momentu ich usuniecia przez uzytkownika, wyczyszczenia danych aplikacji albo odinstalowania aplikacji.</p>
+            <p>Dane przetwarzane przez zewnetrzne uslugi, takie jak Firebase, Google Analytics for Firebase lub uslugi reklamowe, moga byc przechowywane zgodnie z ustawieniami tych uslug, ich politykami retencji oraz konfiguracja wdrozona przez administratora aplikacji.</p>
         </section>
 
         <section class="doc-section">
-            <h2>7. Twoje prawa</h2>
+            <h2>8. Usuwanie danych</h2>
+            <p>Poniewaz aplikacja nie wymaga konta uzytkownika, podstawowym sposobem usuniecia danych lokalnych jest wyczyszczenie danych aplikacji w ustawieniach systemu albo odinstalowanie aplikacji.</p>
+            <p>W przypadku danych przetwarzanych przez zewnetrzne uslugi analityczne lub reklamowe zakres mozliwego usuniecia zalezy od tego, czy da sie powiazac dane z konkretna instalacja aplikacji lub identyfikatorem technicznym.</p>
+        </section>
+
+        <section class="doc-section">
+            <h2>9. Twoje prawa</h2>
             <p>Przysluguje Ci prawo dostepu do danych, ich sprostowania, usuniecia, ograniczenia przetwarzania, przenoszenia danych, wniesienia sprzeciwu oraz cofniecia zgody, jezeli przetwarzanie odbywa sie na jej podstawie.</p>
             <p>W sprawach dotyczacych prywatnosci skontaktuj sie z nami: <code>[UZUPELNIJ: adres e-mail]</code>.</p>
         </section>
 
         <section class="doc-section">
-            <h2>8. Zmiany polityki</h2>
+            <h2>10. Zmiany polityki</h2>
             <p>Mozemy aktualizowac niniejsza polityke prywatnosci wraz ze zmianami funkcji aplikacji, integracji z dostawcami lub wymagan prawnych.</p>
         </section>
     </section>
 
     <section class="section panel" data-lang-section="en">
         <div class="callout callout-warning">
-            <p><strong>Before publishing, fill in:</strong> controller details, privacy contact email, and information about external services and analytics.</p>
+            <p><strong>Before publishing, fill in:</strong> controller details and the privacy contact email.</p>
         </div>
 
         <section class="doc-section">
@@ -131,54 +141,64 @@
 
         <section class="doc-section">
             <h2>2. Scope of this policy</h2>
-            <p>This policy explains how data is processed in the Pantry Expiry Tracker mobile app and any related technical services.</p>
+            <p>This policy explains how data is processed in the Pantry Expiry Tracker mobile app and in third-party services related to analytics, diagnostics, and advertising.</p>
         </section>
 
         <section class="doc-section">
-            <h2>3. What data may be processed</h2>
-            <ul class="checklist">
-                <li>Technical device data, such as operating system version, app identifiers, or basic diagnostic logs.</li>
-                <li>App usage data, such as product lists, expiry dates, reminders, and local settings stored on the device.</li>
-                <li>Diagnostic data and crash reports, if you use third-party analytics or crash reporting tools.</li>
-                <li>Payment or subscription-related data if premium features are added in the future through Google Play or Apple.</li>
-            </ul>
-            <p><code>[FILL IN: confirm whether the app creates accounts, sends data to a backend, or uses analytics]</code></p>
+            <h2>3. No user account</h2>
+            <p>Pantry Expiry Tracker does not require account creation or sign-in. The app can be used without registering a user account.</p>
         </section>
 
         <section class="doc-section">
-            <h2>4. Purposes and legal bases</h2>
+            <h2>4. What data may be processed</h2>
             <ul class="checklist">
-                <li>App functionality and storing settings: Article 6(1)(b) or 6(1)(f) GDPR, depending on your operating model.</li>
-                <li>Security, diagnostics, and bug fixing: Article 6(1)(f) GDPR.</li>
-                <li>Payments and legal obligations, if payments are introduced: Article 6(1)(c) and 6(1)(b) GDPR.</li>
-                <li>Analytics or marketing, if introduced: Article 6(1)(a) GDPR where consent is required.</li>
+                <li>Data stored locally on the device, such as product lists, expiry dates, reminders, and app settings.</li>
+                <li>Technical and diagnostic data, such as operating system version, device model, app instance identifiers, crash logs, and stability-related information.</li>
+                <li>Analytics data processed through Firebase or Google Analytics for Firebase, such as app usage events, installation-related data, and basic device information.</li>
+                <li>Advertising-related data, if the app displays ads, such as advertising identifiers, basic device information, and data needed to display and measure ads through Google or advertising partners.</li>
             </ul>
         </section>
 
         <section class="doc-section">
-            <h2>5. Data recipients</h2>
+            <h2>5. Purposes and legal bases</h2>
+            <ul class="checklist">
+                <li>App functionality and storing local data and reminders: Article 6(1)(b) or 6(1)(f) GDPR, depending on your operating model.</li>
+                <li>Security, diagnostics, technical statistics, and app quality improvement: Article 6(1)(f) GDPR.</li>
+                <li>Displaying and measuring ads and funding the free version of the app: Article 6(1)(f) GDPR or Article 6(1)(a) GDPR where consent is required.</li>
+                <li>Compliance with legal obligations and defence against claims: Article 6(1)(c) and 6(1)(f) GDPR.</li>
+            </ul>
+        </section>
+
+        <section class="doc-section">
+            <h2>6. Data recipients</h2>
             <p>Data may be shared with technical service providers only where necessary for the app to function, for example:</p>
             <ul class="inline-list">
-                <li>analytics and crash reporting providers,</li>
-                <li>cloud or backend infrastructure providers, if used,</li>
-                <li>Google or Apple for store operations, payments, and app distribution.</li>
+                <li>Google and Firebase for analytics, diagnostics, app instance identifiers, and related technical services,</li>
+                <li>Google AdMob or other advertising partners, if used for ad delivery and measurement,</li>
+                <li>Apple or Google for app distribution, payments, and store operations where applicable.</li>
             </ul>
         </section>
 
         <section class="doc-section">
-            <h2>6. Retention period</h2>
-            <p>The scope and duration of storage depend on whether data remains locally on the device or is sent to external technical services.</p>
-            <p><code>[FILL IN: describe on-device storage, log retention, and provider retention periods]</code></p>
+            <h2>7. Retention period</h2>
+            <p>Data stored locally on the device remains there until the user clears the app data, removes it from the device, or uninstalls the app.</p>
+            <p>Data processed by external services such as Firebase, Google Analytics for Firebase, or advertising services may be retained according to those services' configuration, retention settings, and provider policies.</p>
         </section>
 
         <section class="doc-section">
-            <h2>7. Your rights</h2>
+            <h2>8. Data deletion</h2>
+            <p>Because the app does not require a user account, the main way to remove local app data is to clear the app storage in system settings or uninstall the app.</p>
+            <p>For data processed by external analytics or advertising services, the scope of deletion may depend on whether the data can be linked to a specific app installation or technical identifier.</p>
+        </section>
+
+        <section class="doc-section">
+            <h2>9. Your rights</h2>
             <p>You have the right to access, rectify, erase, restrict processing, transfer your data, object to processing, and withdraw consent where processing is based on consent.</p>
             <p>For privacy-related matters, contact us at <code>[FILL IN: contact email]</code>.</p>
         </section>
 
         <section class="doc-section">
-            <h2>8. Policy updates</h2>
+            <h2>10. Policy updates</h2>
             <p>We may update this privacy policy due to app feature changes, provider integrations, or legal requirements.</p>
         </section>
     </section>
